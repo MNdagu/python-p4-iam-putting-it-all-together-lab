@@ -36,7 +36,7 @@ with app.app_context():
             image_url=fake.url(),
         )
 
-        user.password_hash = user.username + 'password'
+        user.password = user.username + 'password'
 
         users.append(user)
 
